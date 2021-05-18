@@ -1,0 +1,21 @@
+<!doctype html public="SOA">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link type="image/x-icon" href="https://ssl1.sephorastatic.cn/wcsfrontend/members/common/favicon.ico"
+        rel="shortcut icon">
+<!--    <link rel="stylesheet" href="static/css/main.css" type="text/css" />-->
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="../static/css/mystyle.css" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+       <form class="form-inline my-2 my-lg-0 header" method="post" action="{{ url_for('web.search') }}">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+        <div>{% block content %}{% endblock %}</div>
+    </div>
+</body>
+</html>

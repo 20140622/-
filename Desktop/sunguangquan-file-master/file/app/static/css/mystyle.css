@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+}
+
+.form-control {
+    width: 300px;
+}

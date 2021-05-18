@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for p in product %}
+    <div>品牌: {{p.brandCN}}</div>
+    <div>名称: {{ p.productCN }}</div>
+    <div>规格: {{ p.skuName }}</div>
+    <hr>
+    {% endfor %}
+{% endblock %}
